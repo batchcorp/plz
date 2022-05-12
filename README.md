@@ -1,5 +1,8 @@
 # plz
 
+> NOTE: This package is a sub-deprendency of thrift-iterator/go. This batchcorp fork adds gls/goid_arm64.s to support compiling plumber for M1 macs.
+
+
 PLZ has three parts
 
 * plz: observability, test helper, message format, utility
