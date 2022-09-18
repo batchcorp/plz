@@ -1,13 +1,13 @@
 package rotation
 
 import (
-	"testing"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"os"
+	"github.com/batchcorp/plz/clock"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/test/must"
 	"io/ioutil"
-	"github.com/v2pro/plz/test/must"
-	"github.com/v2pro/plz/clock"
+	"os"
+	"testing"
 	"time"
 )
 
@@ -18,7 +18,7 @@ func Test_ArchiveByMove(t *testing.T) {
 		archiver := &ArchiveByMove{
 			NamingStrategy: &NameByTime{
 				Directory: "/tmp",
-				Pattern: "test-2006.log",
+				Pattern:   "test-2006.log",
 			},
 		}
 		defer clock.ResetNow()

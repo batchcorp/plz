@@ -2,10 +2,10 @@ package test
 
 import (
 	"testing"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/reflect2"
-	"github.com/v2pro/plz/test/must"
-	"github.com/v2pro/plz/test"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/reflect2"
+	"github.com/batchcorp/plz/test/must"
+	"github.com/batchcorp/plz/test"
 )
 
 func Test_struct_ptr(t *testing.T) {

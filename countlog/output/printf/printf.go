@@ -1,9 +1,9 @@
 package printf
 
 import (
-	"github.com/v2pro/plz/countlog/spi"
-	"github.com/v2pro/plz/msgfmt"
-	"github.com/v2pro/plz/countlog/output"
+	"github.com/batchcorp/plz/countlog/output"
+	"github.com/batchcorp/plz/countlog/spi"
+	"github.com/batchcorp/plz/msgfmt"
 	"time"
 )
 
@@ -17,7 +17,7 @@ func (format *Format) FormatterOf(site *spi.LogSite) output.Formatter {
 		function: site.Func,
 		file:     site.File,
 		line:     site.Line,
-		logFmt: msgfmt.FormatterOf(format.Layout + "\n",
+		logFmt: msgfmt.FormatterOf(format.Layout+"\n",
 			[]interface{}{
 				"message", []byte{},
 				"timestamp", time.Time{},

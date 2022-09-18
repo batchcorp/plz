@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/concurrent"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/concurrent"
 	"time"
 	"errors"
 )

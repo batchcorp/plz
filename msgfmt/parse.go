@@ -1,10 +1,10 @@
 package msgfmt
 
 import (
-	"github.com/v2pro/plz/parse"
+	"github.com/batchcorp/plz/parse"
 	"unicode"
-	"github.com/v2pro/plz/parse/read"
-	"github.com/v2pro/plz/parse/skip"
+	"github.com/batchcorp/plz/parse/read"
+	"github.com/batchcorp/plz/parse/skip"
 	"errors"
 )
 

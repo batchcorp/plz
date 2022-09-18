@@ -1,13 +1,13 @@
 package test
 
 import (
-	"testing"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/test/must"
-	"github.com/v2pro/plz/dump"
-	"reflect"
 	"fmt"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/dump"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/test/must"
+	"reflect"
+	"testing"
 	"unsafe"
 )
 
@@ -29,6 +29,7 @@ type typeAlg struct {
 // available in the memory directly following the rtype value.
 //
 // tflag values must be kept in sync with copies in:
+//
 //	cmd/compile/internal/gc/reflect.go
 //	cmd/link/internal/ld/decodesym.go
 //	runtime/type.go

@@ -6,8 +6,8 @@ import (
 	"sync"
 	"unsafe"
 	"fmt"
-	"github.com/v2pro/plz/concurrent"
-	"github.com/v2pro/plz/reflect2"
+	"github.com/batchcorp/plz/concurrent"
+	"github.com/batchcorp/plz/reflect2"
 )
 
 var bufPool = &sync.Pool{
@@ -40,7 +40,7 @@ func fprintln(writer io.Writer, values []interface{}) (int, error) {
 	case 0:
 		return fmt.Println()
 	case 1:
-		return Fprintf(writer,"{single_value}\n", "single_value", values[0])
+		return Fprintf(writer, "{single_value}\n", "single_value", values[0])
 	default:
 		return Fprintf(writer, "{multiple_values}\n", "multiple_values", values)
 	}

@@ -1,8 +1,8 @@
 package skip
 
 import (
+	"github.com/batchcorp/plz/parse"
 	"unicode"
-	"github.com/v2pro/plz/parse"
 )
 
 func UnicodeRange(src *parse.Source, table *unicode.RangeTable) int {

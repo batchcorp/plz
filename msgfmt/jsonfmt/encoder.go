@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"encoding/json"
 	"context"
-	"github.com/v2pro/plz/reflect2"
-	"github.com/v2pro/plz/concurrent"
+	"github.com/batchcorp/plz/reflect2"
+	"github.com/batchcorp/plz/concurrent"
 )
 
 var bytesType = reflect2.TypeOf([]byte(nil))
@@ -35,7 +35,6 @@ type API interface {
 }
 
 var ConfigDefault = Config{}.Froze()
-
 
 type frozenConfig struct {
 	includesUnexported bool
@@ -170,7 +169,7 @@ func encoderOf(cfg *frozenConfig, prefix string, valType reflect2.Type) Encoder 
 		mapType := valType.(reflect2.MapType)
 		return encoderOfMap(cfg, prefix, mapType)
 	case reflect.Interface:
-		return &dynamicEncoder{valType:valType}
+		return &dynamicEncoder{valType: valType}
 	}
 	return &unsupportedEncoder{fmt.Sprintf(`"can not encode %s %s to json"`, valType.String(), prefix)}
 }

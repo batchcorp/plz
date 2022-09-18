@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/batchcorp/plz/countlog"
 	"testing"
-	"github.com/v2pro/plz/countlog"
 )
 
 func Benchmark_trace_call(b *testing.B) {

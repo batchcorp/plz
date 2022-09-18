@@ -2,11 +2,11 @@ package rotation
 
 import (
 	"testing"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/clock"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/clock"
 	"time"
-	"github.com/v2pro/plz/test/must"
+	"github.com/batchcorp/plz/test/must"
 )
 
 func Test_TriggerByInterval(t *testing.T) {
@@ -22,6 +22,6 @@ func Test_TriggerByInterval(t *testing.T) {
 		clock.Now = func() time.Time {
 			return time.Unix(1, 0)
 		}
-		must.Equal(3599 * time.Second, trigger.TimeToTrigger())
+		must.Equal(3599*time.Second, trigger.TimeToTrigger())
 	}))
 }

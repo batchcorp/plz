@@ -3,16 +3,16 @@ package witch
 import "net/http"
 import (
 	"bytes"
-	"github.com/rakyll/statik/fs"
-	"github.com/v2pro/plz/countlog"
-	_ "github.com/v2pro/plz/witch/statik"
-	"io/ioutil"
-	"github.com/v2pro/plz/countlog/output"
-	"github.com/v2pro/plz/countlog/output/json"
 	"expvar"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/countlog/output"
+	"github.com/batchcorp/plz/countlog/output/json"
+	_ "github.com/batchcorp/plz/witch/statik"
+	"github.com/rakyll/statik/fs"
+	"io/ioutil"
 	"path"
-	"runtime"
 	"reflect"
+	"runtime"
 )
 
 var files = []string{

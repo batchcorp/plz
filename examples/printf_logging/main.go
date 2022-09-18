@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/v2pro/plz/countlog/output"
-	. "github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/countlog/output/printf"
+	"github.com/batchcorp/plz/countlog/output"
+	. "github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/countlog/output/printf"
 )
 
 func main() {

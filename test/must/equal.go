@@ -2,7 +2,7 @@ package must
 
 import (
 	"github.com/stretchr/testify/assert"
-	"github.com/v2pro/plz/test"
+	"github.com/batchcorp/plz/test"
 	"runtime"
 )
 

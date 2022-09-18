@@ -1,10 +1,10 @@
 package must
 
 import (
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/test/testify/assert"
 	"reflect"
-	"github.com/v2pro/plz/test"
 	"runtime"
-	"github.com/v2pro/plz/test/testify/assert"
 )
 
 type ReturnValue []interface{}

@@ -1,10 +1,10 @@
 package stats
 
-import "github.com/v2pro/plz/countlog/spi"
+import "github.com/batchcorp/plz/countlog/spi"
 
 type countEvent struct {
 	*Window
-	site *spi.LogSite
+	site      *spi.LogSite
 	extractor dimensionExtractor
 }
 

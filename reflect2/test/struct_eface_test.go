@@ -2,7 +2,7 @@ package test
 
 import (
 	"testing"
-	"github.com/v2pro/plz/reflect2"
+	"github.com/batchcorp/plz/reflect2"
 )
 
 func Test_struct_eface(t *testing.T) {

@@ -3,7 +3,7 @@ package dump
 import (
 	"context"
 	"unsafe"
-	"github.com/v2pro/plz/msgfmt/jsonfmt"
+	"github.com/batchcorp/plz/msgfmt/jsonfmt"
 	"encoding/json"
 )
 

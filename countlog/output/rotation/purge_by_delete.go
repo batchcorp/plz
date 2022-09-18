@@ -2,7 +2,7 @@ package rotation
 
 import (
 	"os"
-	"github.com/v2pro/plz"
+	"github.com/batchcorp/plz"
 )
 
 type PurgeByDelete struct {

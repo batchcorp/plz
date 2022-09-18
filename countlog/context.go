@@ -2,7 +2,7 @@ package countlog
 
 import (
 	"context"
-	"github.com/v2pro/plz/countlog/spi"
+	"github.com/batchcorp/plz/countlog/spi"
 	"unsafe"
 )
 
@@ -16,7 +16,7 @@ func Ctx(ctx context.Context) *Context {
 
 type Context struct {
 	context.Context
-	logContext *spi.LogContext
+	logContext         *spi.LogContext
 	suppressedMinLevel int
 }
 

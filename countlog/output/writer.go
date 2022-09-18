@@ -1,11 +1,11 @@
 package output
 
 import (
-	"github.com/v2pro/plz/countlog/spi"
+	"github.com/batchcorp/plz/countlog/spi"
 	"io"
 	"sync"
 	"os"
-	"github.com/v2pro/plz/countlog/loglog"
+	"github.com/batchcorp/plz/countlog/loglog"
 )
 
 type EventWriter struct {
@@ -33,14 +33,14 @@ func NewEventWriter(cfg EventWriterConfig) *EventWriter {
 func (sink *EventWriter) HandlerOf(site *spi.LogSite) spi.EventHandler {
 	formatter := sink.format.FormatterOf(site)
 	return &writeEvent{
-		site: site,
+		site:      site,
 		formatter: formatter,
 		writer:    sink.writer,
 	}
 }
 
 type writeEvent struct {
-	site *spi.LogSite
+	site      *spi.LogSite
 	formatter Formatter
 	writer    io.Writer
 }

@@ -1,11 +1,11 @@
 package countlog
 
 import (
-	"github.com/v2pro/plz/countlog/spi"
-	"runtime"
 	"fmt"
+	"github.com/batchcorp/plz/countlog/loglog"
+	"github.com/batchcorp/plz/countlog/spi"
+	"runtime"
 	"runtime/debug"
-	"github.com/v2pro/plz/countlog/loglog"
 )
 
 type panicHandler func(recovered interface{}, event *spi.Event, site *spi.LogSite)
@@ -73,7 +73,7 @@ func (handler *statsAndOutput) LogSite() *spi.LogSite {
 
 func nomalModeOnPanic(recovered interface{}, event *spi.Event, site *spi.LogSite) {
 	redirector := &redirector{
-		site:            *site,
+		site: *site,
 	}
 	handlerCache.Store(site.Event, redirector)
 	newSite := *site

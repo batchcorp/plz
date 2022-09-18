@@ -3,11 +3,11 @@ package test
 import (
 	"testing"
 	"time"
-	"github.com/v2pro/plz/msgfmt"
+	"github.com/batchcorp/plz/msgfmt"
 	"fmt"
-	"github.com/v2pro/plz/countlog"
-	. "github.com/v2pro/plz/test"
-	. "github.com/v2pro/plz/test/must"
+	"github.com/batchcorp/plz/countlog"
+	. "github.com/batchcorp/plz/test"
+	. "github.com/batchcorp/plz/test/must"
 )
 
 func Test_string(t *testing.T) {

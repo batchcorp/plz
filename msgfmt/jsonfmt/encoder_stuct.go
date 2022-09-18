@@ -3,7 +3,7 @@ package jsonfmt
 import (
 	"unsafe"
 	"context"
-	"github.com/v2pro/plz/reflect2"
+	"github.com/batchcorp/plz/reflect2"
 )
 
 type structEncoder struct {
@@ -12,8 +12,8 @@ type structEncoder struct {
 
 type structEncoderField struct {
 	structField *reflect2.UnsafeStructField
-	prefix  string
-	encoder Encoder
+	prefix      string
+	encoder     Encoder
 }
 
 func (encoder *structEncoder) Encode(ctx context.Context, space []byte, ptr unsafe.Pointer) []byte {

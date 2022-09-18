@@ -1,9 +1,9 @@
 package hrf
 
 import (
-	"github.com/v2pro/plz/countlog/spi"
-	"github.com/v2pro/plz/countlog/output"
-	"github.com/v2pro/plz/msgfmt"
+	"github.com/batchcorp/plz/countlog/output"
+	"github.com/batchcorp/plz/countlog/spi"
+	"github.com/batchcorp/plz/msgfmt"
 	"strings"
 )
 
@@ -44,7 +44,7 @@ func (format *Format) FormatterOf(site *spi.LogSite) output.Formatter {
 		key := site.Sample[i].(string)
 		formatters = append(formatters, fixedFormatter("\x1b[90;1m"))
 		if key == "timer" {
-			formatters = append(formatters, &timerFormatter{idx: i+1})
+			formatters = append(formatters, &timerFormatter{idx: i + 1})
 		} else {
 			formatters = append(formatters, &propFormatter{
 				msgfmt.FormatterOf("\n"+key+": {"+key+"}", site.Sample),

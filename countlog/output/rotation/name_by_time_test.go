@@ -1,21 +1,21 @@
 package rotation
 
 import (
-	"testing"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/test/must"
-	"os"
+	"github.com/batchcorp/plz/clock"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/test/must"
 	"io/ioutil"
+	"os"
+	"testing"
 	"time"
-	"github.com/v2pro/plz/clock"
 )
 
 func Test_NameByTime(t *testing.T) {
 	t.Run("next file", test.Case(func(ctx *countlog.Context) {
 		namer := &NameByTime{
 			Directory: "/tmp",
-			Pattern: "test-2006.log",
+			Pattern:   "test-2006.log",
 		}
 		defer clock.ResetNow()
 		clock.Now = func() time.Time {
@@ -32,7 +32,7 @@ func Test_NameByTime(t *testing.T) {
 		ioutil.WriteFile("/tmp/testlog/test-abc.log", []byte{}, 0644)
 		namer := &NameByTime{
 			Directory: "/tmp/testlog",
-			Pattern: "test-2006.log",
+			Pattern:   "test-2006.log",
 		}
 		files := must.Call(namer.ListFiles)[0]
 		must.Equal([]string{

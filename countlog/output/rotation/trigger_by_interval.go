@@ -3,7 +3,7 @@ package rotation
 import (
 	"os"
 	"time"
-	"github.com/v2pro/plz/clock"
+	"github.com/batchcorp/plz/clock"
 )
 
 type TriggerByInterval struct {
@@ -16,5 +16,5 @@ func (trigger *TriggerByInterval) UpdateStat(stat interface{}, file *os.File, bu
 
 func (trigger *TriggerByInterval) TimeToTrigger() time.Duration {
 	epoch := clock.Now().Unix()
-	return trigger.Interval - (time.Duration(epoch) * time.Second) % trigger.Interval
+	return trigger.Interval - (time.Duration(epoch)*time.Second)%trigger.Interval
 }

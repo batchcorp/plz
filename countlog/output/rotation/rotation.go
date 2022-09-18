@@ -4,13 +4,13 @@ import (
 	"os"
 	"time"
 	"path"
-	"github.com/v2pro/plz/concurrent"
+	"github.com/batchcorp/plz/concurrent"
 	"context"
 	"unsafe"
 	"sync/atomic"
-	"github.com/v2pro/plz/countlog/spi"
+	"github.com/batchcorp/plz/countlog/spi"
 	"math/rand"
-	"github.com/v2pro/plz/countlog/loglog"
+	"github.com/batchcorp/plz/countlog/loglog"
 )
 
 // normal => triggered => opened new => normal

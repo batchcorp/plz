@@ -2,7 +2,7 @@ package read
 
 import (
 	"unicode"
-	"github.com/v2pro/plz/parse"
+	"github.com/batchcorp/plz/parse"
 )
 
 func UnicodeRange(src *parse.Source, space []rune, table *unicode.RangeTable) []rune {

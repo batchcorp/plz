@@ -1,7 +1,7 @@
 package should
 
 import (
-	"github.com/v2pro/plz/test"
+	"github.com/batchcorp/plz/test"
 	"runtime"
 	"github.com/davecgh/go-spew/spew"
 )
@@ -16,7 +16,7 @@ func Assert(result bool, kv ...interface{}) {
 			t.Error("check failed")
 			return
 		}
-		for i := 0; i < len(kv); i+=2 {
+		for i := 0; i < len(kv); i += 2 {
 			key := kv[i].(string)
 			t.Errorf("%s: %s", key, spew.Sdump(kv[i+1]))
 		}
@@ -34,7 +34,7 @@ func Pass(result bool, kv ...interface{}) {
 			t.Error("check failed")
 			return
 		}
-		for i := 0; i < len(kv); i+=2 {
+		for i := 0; i < len(kv); i += 2 {
 			key := kv[i].(string)
 			t.Errorf("%s: %s", key, spew.Sdump(kv[i+1]))
 		}

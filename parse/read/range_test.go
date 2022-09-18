@@ -2,12 +2,12 @@ package read_test
 
 import (
 	"testing"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/countlog"
 	"unicode"
-	"github.com/v2pro/plz/parse/read"
-	"github.com/v2pro/plz/parse"
-	"github.com/v2pro/plz/test/must"
+	"github.com/batchcorp/plz/parse/read"
+	"github.com/batchcorp/plz/parse"
+	"github.com/batchcorp/plz/test/must"
 )
 
 func TestUnicodeRanges(t *testing.T) {

@@ -1,8 +1,8 @@
 package test
 
 import (
+	"github.com/batchcorp/plz/reflect2"
 	"testing"
-	"github.com/v2pro/plz/reflect2"
 )
 
 func Test_map_elem_map(t *testing.T) {
@@ -15,8 +15,8 @@ func Test_map_elem_map(t *testing.T) {
 	t.Run("SetIndex", testOp(func(api reflect2.API) interface{} {
 		obj := map[int]map[int]int{}
 		valType := api.TypeOf(obj).(reflect2.MapType)
-		valType.SetIndex(&obj, pInt(2), pMap(map[int]int{4:4}))
-		valType.SetIndex(&obj, pInt(3), pMap(map[int]int{9:9}))
+		valType.SetIndex(&obj, pInt(2), pMap(map[int]int{4: 4}))
+		valType.SetIndex(&obj, pInt(3), pMap(map[int]int{9: 9}))
 		valType.SetIndex(&obj, pInt(3), pMap(nil))
 		return obj
 	}))

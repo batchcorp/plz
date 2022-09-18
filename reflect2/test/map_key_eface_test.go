@@ -2,8 +2,8 @@ package test
 
 import (
 	"testing"
-	"github.com/v2pro/plz/reflect2"
-	"github.com/v2pro/plz/test/must"
+	"github.com/batchcorp/plz/reflect2"
+	"github.com/batchcorp/plz/test/must"
 )
 
 func Test_map_key_eface(t *testing.T) {

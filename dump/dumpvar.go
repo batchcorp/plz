@@ -1,17 +1,17 @@
 package dump
 
 import (
-	"unsafe"
-	"github.com/v2pro/plz/msgfmt/jsonfmt"
-	"reflect"
 	"context"
 	"encoding/json"
+	"github.com/batchcorp/plz/msgfmt/jsonfmt"
+	"reflect"
+	"unsafe"
 )
 
 var addrMapKey = 2020020002
 var dumper = jsonfmt.Config{
 	IncludesUnexported: true,
-	Extensions: []jsonfmt.Extension{&dumpExtension{}},
+	Extensions:         []jsonfmt.Extension{&dumpExtension{}},
 }.Froze()
 
 var efaceType = reflect.TypeOf(eface{})

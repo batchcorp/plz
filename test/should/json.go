@@ -2,10 +2,10 @@ package should
 
 import (
 	"encoding/json"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/test/testify/assert"
-	"runtime"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/test/testify/assert"
 	"reflect"
+	"runtime"
 )
 
 func JsonEqual(expected string, actual interface{}) {

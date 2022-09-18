@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"errors"
 	"math"
-	"github.com/v2pro/plz/parse"
+	"github.com/batchcorp/plz/parse"
 )
 
 var intDigits []int8

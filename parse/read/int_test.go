@@ -2,13 +2,13 @@ package read_test
 
 import (
 	"testing"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/test/must"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/test/must"
 	"io"
 	"strings"
-	"github.com/v2pro/plz/parse"
-	"github.com/v2pro/plz/parse/read"
+	"github.com/batchcorp/plz/parse"
+	"github.com/batchcorp/plz/parse/read"
 )
 
 func Test_ConsumeUint64_from_string(t *testing.T) {

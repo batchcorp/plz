@@ -1,11 +1,11 @@
 package msgfmt
 
 import (
-	"io"
-	"github.com/v2pro/plz/parse"
 	"fmt"
-	"github.com/v2pro/plz/msgfmt/jsonfmt"
-	"github.com/v2pro/plz/reflect2"
+	"github.com/batchcorp/plz/msgfmt/jsonfmt"
+	"github.com/batchcorp/plz/parse"
+	"github.com/batchcorp/plz/reflect2"
+	"io"
 )
 
 type Formatter interface {

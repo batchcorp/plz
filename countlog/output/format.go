@@ -1,6 +1,6 @@
 package output
 
-import "github.com/v2pro/plz/countlog/spi"
+import "github.com/batchcorp/plz/countlog/spi"
 
 type Format interface {
 	FormatterOf(site *spi.LogSite) Formatter

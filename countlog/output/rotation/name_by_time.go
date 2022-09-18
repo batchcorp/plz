@@ -1,11 +1,11 @@
 package rotation
 
 import (
+	"github.com/batchcorp/plz/clock"
 	"os"
-	"time"
 	"path"
 	"sort"
-	"github.com/v2pro/plz/clock"
+	"time"
 )
 
 type NameByTime struct {
@@ -46,9 +46,9 @@ func (namer *NameByTime) ListFiles() ([]Archive, error) {
 			return nil, err
 		}
 		archives[i] = Archive{
-			Path: timedFile.file,
+			Path:       timedFile.file,
 			ArchivedAt: timedFile.time,
-			Size: stat.Size(),
+			Size:       stat.Size(),
 		}
 	}
 	return archives, nil

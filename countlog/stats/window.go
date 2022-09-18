@@ -1,12 +1,12 @@
 package stats
 
 import (
-	"github.com/v2pro/plz/countlog/spi"
+	"github.com/batchcorp/plz/countlog/spi"
 	"unsafe"
 	"strings"
 	"reflect"
 	"sync"
-	"github.com/v2pro/plz/gls"
+	"github.com/batchcorp/plz/gls"
 	"time"
 	"context"
 )

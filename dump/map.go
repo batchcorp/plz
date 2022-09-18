@@ -2,11 +2,11 @@ package dump
 
 import (
 	"context"
-	"unsafe"
-	"github.com/v2pro/plz/msgfmt/jsonfmt"
+	"encoding/json"
+	"github.com/batchcorp/plz/msgfmt/jsonfmt"
 	"math"
 	"reflect"
-	"encoding/json"
+	"unsafe"
 )
 
 // A header for a Go map.
@@ -110,7 +110,7 @@ func (encoder *mapEncoder) Encode(ctx context.Context, space []byte, ptr unsafe.
 		addrMap[bucketsPtr] = json.RawMessage(bucketsData)
 	}
 	if hmap.oldbuckets != nil {
-		oldbucketsData := encoder.encodeBuckets(ctx, nil, bucketsCount / 2, hmap.oldbuckets)
+		oldbucketsData := encoder.encodeBuckets(ctx, nil, bucketsCount/2, hmap.oldbuckets)
 		addrMap := ctx.Value(addrMapKey).(map[string]json.RawMessage)
 		addrMap[oldbucketsPtr] = json.RawMessage(oldbucketsData)
 	}
@@ -180,7 +180,7 @@ func (encoder *mapEncoder) encodeBucketPtrArray(ctx context.Context, space []byt
 		if i != 0 {
 			space = append(space, ',', ' ')
 		}
-		elemPtr := *(*unsafe.Pointer)(unsafe.Pointer(cursor + 8 * uintptr(i)))
+		elemPtr := *(*unsafe.Pointer)(unsafe.Pointer(cursor + 8*uintptr(i)))
 		space = append(space, `{"__ptr__":"`...)
 		elemPtrStr := ptrToStr(uintptr(elemPtr))
 		space = append(space, elemPtrStr...)

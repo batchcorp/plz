@@ -1,6 +1,6 @@
 package read
 
-import "github.com/v2pro/plz/parse"
+import "github.com/batchcorp/plz/parse"
 
 func AnyExcept1(src *parse.Source, space []byte, b1 byte) []byte {
 	for src.Error() == nil {

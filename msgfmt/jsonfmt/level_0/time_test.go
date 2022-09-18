@@ -1,12 +1,12 @@
 package test
 
 import (
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/msgfmt/jsonfmt"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/test/must"
 	"testing"
-	"github.com/v2pro/plz/msgfmt/jsonfmt"
 	"time"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/test/must"
 )
 
 func Test_time(t *testing.T) {

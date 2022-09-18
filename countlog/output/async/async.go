@@ -6,8 +6,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/v2pro/plz/concurrent"
-	"github.com/v2pro/plz/countlog/loglog"
+	"github.com/batchcorp/plz/concurrent"
+	"github.com/batchcorp/plz/countlog/loglog"
 )
 
 type blockingQueueWriter struct {

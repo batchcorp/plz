@@ -2,9 +2,9 @@ package compact
 
 import (
 	"fmt"
-	"github.com/v2pro/plz/countlog/output"
-	"github.com/v2pro/plz/countlog/spi"
-	"github.com/v2pro/plz/msgfmt"
+	"github.com/batchcorp/plz/countlog/output"
+	"github.com/batchcorp/plz/countlog/spi"
+	"github.com/batchcorp/plz/msgfmt"
 	"strings"
 )
 

@@ -3,12 +3,12 @@ package test
 import (
 	"testing"
 	"io"
-	"github.com/v2pro/plz/msgfmt/jsonfmt"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/test/must"
+	"github.com/batchcorp/plz/msgfmt/jsonfmt"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/test/must"
 	"encoding/json"
-	"github.com/v2pro/plz/reflect2"
+	"github.com/batchcorp/plz/reflect2"
 )
 
 func Test_map(t *testing.T) {

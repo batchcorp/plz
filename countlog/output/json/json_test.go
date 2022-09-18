@@ -3,8 +3,8 @@ package json
 import (
 	"testing"
 
+	"github.com/batchcorp/plz/countlog/spi"
 	"github.com/stretchr/testify/require"
-	"github.com/v2pro/plz/countlog/spi"
 )
 
 func Test_event(t *testing.T) {

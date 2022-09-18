@@ -2,7 +2,7 @@ package skip
 
 import (
 	"unicode"
-	"github.com/v2pro/plz/parse"
+	"github.com/batchcorp/plz/parse"
 )
 
 func Space(src *parse.Source) int {

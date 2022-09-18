@@ -2,10 +2,10 @@ package countlog
 
 import (
 	"os"
-	"github.com/v2pro/plz/countlog/output"
-	"github.com/v2pro/plz/countlog/stats"
-	"github.com/v2pro/plz/countlog/output/hrf"
-	"github.com/v2pro/plz/countlog/spi"
+	"github.com/batchcorp/plz/countlog/output"
+	"github.com/batchcorp/plz/countlog/stats"
+	"github.com/batchcorp/plz/countlog/output/hrf"
+	"github.com/batchcorp/plz/countlog/spi"
 )
 
 var EventWriter spi.EventSink = output.NewEventWriter(output.EventWriterConfig{

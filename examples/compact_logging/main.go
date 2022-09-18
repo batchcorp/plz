@@ -1,11 +1,11 @@
 package main
 
 import (
-	. "github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/countlog/output"
-	"github.com/v2pro/plz/countlog/output/async"
-	"github.com/v2pro/plz/countlog/output/json"
-	"github.com/v2pro/plz/countlog/output/lumberjack"
+	. "github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/countlog/output"
+	"github.com/batchcorp/plz/countlog/output/async"
+	"github.com/batchcorp/plz/countlog/output/json"
+	"github.com/batchcorp/plz/countlog/output/lumberjack"
 )
 
 func main() {

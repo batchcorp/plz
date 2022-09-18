@@ -2,7 +2,7 @@ package plz
 
 import (
 	"fmt"
-	"github.com/v2pro/plz/countlog"
+	"github.com/batchcorp/plz/countlog"
 	"io"
 	"runtime"
 )

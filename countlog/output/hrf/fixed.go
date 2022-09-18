@@ -1,6 +1,6 @@
 package hrf
 
-import "github.com/v2pro/plz/countlog/spi"
+import "github.com/batchcorp/plz/countlog/spi"
 
 type fixedFormatter string
 

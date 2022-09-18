@@ -1,8 +1,8 @@
 package msgfmt
 
 import (
-	"github.com/v2pro/plz/msgfmt/jsonfmt"
-	"github.com/v2pro/plz/reflect2"
+	"github.com/batchcorp/plz/msgfmt/jsonfmt"
+	"github.com/batchcorp/plz/reflect2"
 )
 
 type jsonFormatter struct {

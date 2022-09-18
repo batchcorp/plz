@@ -4,10 +4,10 @@ import (
 	"unsafe"
 	"runtime"
 	"time"
-	"github.com/v2pro/plz/countlog/spi"
-	"github.com/v2pro/plz/msgfmt"
+	"github.com/batchcorp/plz/countlog/spi"
+	"github.com/batchcorp/plz/msgfmt"
 	"errors"
-	"github.com/v2pro/plz/concurrent"
+	"github.com/batchcorp/plz/concurrent"
 )
 
 const LevelTraceCall = spi.LevelTraceCall
@@ -207,12 +207,12 @@ func newHandler(eventName string, agg string, ctx *Context, properties []interfa
 	pc, callerFile, callerLine, _ := runtime.Caller(4)
 	site := &spi.LogSite{
 		Context: ctx,
-		Func: runtime.FuncForPC(pc).Name(),
-		Event:  eventName,
-		Agg:    agg,
-		File:   callerFile,
-		Line:   callerLine,
-		Sample: properties,
+		Func:    runtime.FuncForPC(pc).Name(),
+		Event:   eventName,
+		Agg:     agg,
+		File:    callerFile,
+		Line:    callerLine,
+		Sample:  properties,
 	}
 	handler := newRootHandler(site, nomalModeOnPanic)
 	handlerCache.Store(eventName, handler)

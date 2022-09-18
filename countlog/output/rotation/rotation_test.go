@@ -2,10 +2,10 @@ package rotation_test
 
 import (
 	"testing"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/countlog/output/rotation"
-	"github.com/v2pro/plz/test/must"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/countlog/output/rotation"
+	"github.com/batchcorp/plz/test/must"
 	"os"
 	"io/ioutil"
 	"time"
@@ -68,7 +68,7 @@ func Test_rotation(t *testing.T) {
 				},
 			},
 			RetainStrategy: &rotation.RetainByCount{3},
-			PurgeStrategy: &rotation.PurgeByDelete{},
+			PurgeStrategy:  &rotation.PurgeByDelete{},
 		})
 		defer must.Call(writer.Close)
 		for i := 0; i < 60; i++ {

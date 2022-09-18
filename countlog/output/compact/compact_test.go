@@ -4,7 +4,7 @@ import (
 	"testing"
 	"github.com/stretchr/testify/require"
 	"time"
-	"github.com/v2pro/plz/countlog/spi"
+	"github.com/batchcorp/plz/countlog/spi"
 )
 
 func Test_compact_string(t *testing.T) {
@@ -19,7 +19,7 @@ func Test_compact_string(t *testing.T) {
 	})
 	should.Equal(`abc||timestamp=`+
 		now.Format(time.RFC3339)+
-		`||k1=hello||k2=abc`+ "\n", string(formatted))
+		`||k1=hello||k2=abc`+"\n", string(formatted))
 }
 
 func Test_callee(t *testing.T) {
@@ -27,8 +27,7 @@ func Test_callee(t *testing.T) {
 	now := time.Now()
 	formatted := format(0, "callee!abc", "file", 17, &spi.Event{
 		Timestamp: now,
-		Properties: []interface{}{
-		},
+		Properties: []interface{}{},
 	})
 	should.Equal(`call abc||timestamp=`+now.Format(time.RFC3339)+"\n",
 		string(formatted))
@@ -46,7 +45,7 @@ func Test_format_msg(t *testing.T) {
 	})
 	should.Equal(`hello~abc||timestamp=`+
 		now.Format(time.RFC3339)+
-		`||k1=hello||k2=abc`+ "\n", string(formatted))
+		`||k1=hello||k2=abc`+"\n", string(formatted))
 }
 
 func format(level int, eventName string,

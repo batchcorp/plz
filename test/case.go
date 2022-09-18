@@ -2,9 +2,9 @@ package test
 
 import (
 	"testing"
-	"github.com/v2pro/plz/countlog"
+	"github.com/batchcorp/plz/countlog"
 	"context"
-	"github.com/v2pro/plz/gls"
+	"github.com/batchcorp/plz/gls"
 	"reflect"
 )
 

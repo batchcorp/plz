@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/v2pro/plz/witch"
+	"github.com/batchcorp/plz/witch"
 	"os"
 )
 

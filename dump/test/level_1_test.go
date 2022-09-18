@@ -2,10 +2,10 @@ package test
 
 import (
 	"testing"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/test/must"
-	"github.com/v2pro/plz/dump"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/test/must"
+	"github.com/batchcorp/plz/dump"
 )
 
 func Test_level1(t *testing.T) {

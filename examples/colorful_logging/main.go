@@ -4,10 +4,10 @@ import (
 	"os"
 	"time"
 
-	. "github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/countlog/output"
-	"github.com/v2pro/plz/countlog/output/async"
-	"github.com/v2pro/plz/countlog/output/hrf"
+	. "github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/countlog/output"
+	"github.com/batchcorp/plz/countlog/output/async"
+	"github.com/batchcorp/plz/countlog/output/hrf"
 )
 
 func main() {

@@ -2,10 +2,10 @@ package dump
 
 import (
 	"context"
-	"unsafe"
 	"encoding/json"
-	"github.com/v2pro/plz/msgfmt/jsonfmt"
+	"github.com/batchcorp/plz/msgfmt/jsonfmt"
 	"reflect"
+	"unsafe"
 )
 
 var strEncoderInst = jsonfmt.EncoderOf(reflect.TypeOf(""))

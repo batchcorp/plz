@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/v2pro/plz"
-	"github.com/v2pro/plz/countlog"
+	"github.com/batchcorp/plz"
+	"github.com/batchcorp/plz/countlog"
 	"os"
 	"time"
 )

@@ -3,7 +3,7 @@ package parse
 import (
 	"io"
 	"errors"
-	"github.com/v2pro/plz/countlog/loglog"
+	"github.com/batchcorp/plz/countlog/loglog"
 	"unicode/utf8"
 	"reflect"
 )

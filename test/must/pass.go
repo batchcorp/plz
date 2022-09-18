@@ -1,9 +1,9 @@
 package must
 
 import (
-	"github.com/v2pro/plz/test"
+	"github.com/batchcorp/plz/test"
 	"runtime"
-	"github.com/v2pro/plz/test/go-spew/spew"
+	"github.com/batchcorp/plz/test/go-spew/spew"
 )
 
 //go:noinline
@@ -33,7 +33,7 @@ func Pass(result bool, kv ...interface{}) {
 		t.Fatal("check failed")
 		return
 	}
-	for i := 0; i < len(kv); i+=2 {
+	for i := 0; i < len(kv); i += 2 {
 		key := kv[i].(string)
 		t.Errorf("%s: %s", key, spew.Sdump(kv[i+1]))
 	}

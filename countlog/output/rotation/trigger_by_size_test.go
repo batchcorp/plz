@@ -2,10 +2,10 @@ package rotation
 
 import (
 	"testing"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/countlog"
 	"os"
-	"github.com/v2pro/plz/test/must"
+	"github.com/batchcorp/plz/test/must"
 	"io/ioutil"
 )
 

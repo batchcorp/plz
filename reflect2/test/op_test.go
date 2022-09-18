@@ -1,11 +1,11 @@
 package test
 
 import (
-	"github.com/v2pro/plz/reflect2"
+	"github.com/batchcorp/plz/reflect2"
 	"testing"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/test/must"
-	"github.com/v2pro/plz/test"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/test/must"
+	"github.com/batchcorp/plz/test"
 )
 
 func testOp(f func(api reflect2.API) interface{}) func(t *testing.T) {

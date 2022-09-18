@@ -1,8 +1,8 @@
 package should
 
 import (
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/test/testify/assert"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/test/testify/assert"
 	"runtime"
 )
 

@@ -1,11 +1,11 @@
 package test
 
 import (
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/msgfmt/jsonfmt"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/test/must"
 	"testing"
-	"github.com/v2pro/plz/msgfmt/jsonfmt"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/test/must"
 )
 
 func Test_bytes(t *testing.T) {

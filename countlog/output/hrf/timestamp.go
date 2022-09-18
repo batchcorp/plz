@@ -1,7 +1,7 @@
 package hrf
 
 import (
-	"github.com/v2pro/plz/countlog/spi"
+	"github.com/batchcorp/plz/countlog/spi"
 )
 
 type timestampFormatter struct {

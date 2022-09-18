@@ -1,10 +1,10 @@
 package json
 
 import (
-	"github.com/v2pro/plz/countlog/output"
-	"github.com/v2pro/plz/countlog/spi"
-	"github.com/v2pro/plz/msgfmt/jsonfmt"
-	"github.com/v2pro/plz/reflect2"
+	"github.com/batchcorp/plz/countlog/output"
+	"github.com/batchcorp/plz/countlog/spi"
+	"github.com/batchcorp/plz/msgfmt/jsonfmt"
+	"github.com/batchcorp/plz/reflect2"
 )
 
 type JsonFormat struct {

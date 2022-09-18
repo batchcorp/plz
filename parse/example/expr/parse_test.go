@@ -1,13 +1,13 @@
 package test
 
 import (
-	"testing"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
-	"github.com/v2pro/plz/test/must"
-	"github.com/v2pro/plz/parse"
+	"github.com/batchcorp/plz/countlog"
+	"github.com/batchcorp/plz/parse"
+	"github.com/batchcorp/plz/parse/read"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/test/must"
 	"io"
-	"github.com/v2pro/plz/parse/read"
+	"testing"
 )
 
 func Test(t *testing.T) {

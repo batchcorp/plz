@@ -2,12 +2,12 @@ package test
 
 import (
 	"testing"
-	"github.com/v2pro/plz/reflect2"
+	"github.com/batchcorp/plz/reflect2"
 	"errors"
-	"github.com/v2pro/plz/test"
-	"github.com/v2pro/plz/countlog"
+	"github.com/batchcorp/plz/test"
+	"github.com/batchcorp/plz/countlog"
 	"unsafe"
-	"github.com/v2pro/plz/test/must"
+	"github.com/batchcorp/plz/test/must"
 )
 
 func Test_slice_iface(t *testing.T) {
