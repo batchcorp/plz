@@ -1,4 +1,4 @@
-module github.com/v2pro/plz
+module github.com/batchcorp/plz
 
 go 1.14
 
